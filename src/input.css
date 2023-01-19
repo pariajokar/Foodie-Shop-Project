@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+    --rich-black-fogra-29: hsl(210, 26%, 7%);
+    --champagne-pink_20: hsla(23, 61%, 86%, 0.2);
+    --independence_30: hsla(245, 17%, 29%, 0.3);
+    --gray-x-11-gray: hsl(0, 0%, 73%);
+    --champagne-pink: hsl(23, 61%, 86%);
+    --spanish-gray: hsl(0, 0%, 60%);
+    --sonic-silver: hsl(0, 0%, 47%);
+    --deep-saffron: hsl(32, 100%, 59%);
+    --dark-orange: hsl(28, 100%, 58%);
+    --desert-sand: hsl(23, 49%, 82%);
+    --isabelline: hsl(38, 44%, 96%);
+    --gainsboro: hsl(0, 0%, 87%);
+    --tangerine: hsl(31, 84%, 50%);
+    --cinnabar: hsl(3, 90%, 55%);
+    --black_95: hsla(0, 0%, 0%, 0.95);
+    --cultured: hsl(0, 0%, 93%);
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --onyx: hsl(0, 0%, 27%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    overflow-x: hidden;
+    font-family: rubikM;
+}
+
+body::-webkit-scrollbar,
+.cart::-webkit-scrollbar {
+    width: 7px;
+}
+
+body,
+.cart {
+    scrollbar-width: thin;
+    scrollbar-color: var(--deep-saffron) var(--gainsboro);
+}
+
+body::-webkit-scrollbar-track,
+.cart::-webkit-scrollbar-track {
+    background: var(--gainsboro);
+}
+
+body::-webkit-scrollbar-thumb,
+.cart::-webkit-scrollbar-thumb {
+    background-color: var(--deep-saffron);
+    border-radius: 1px;
+}
+
+@font-face {
+    font-family: rubikM;
+    src: url(fonts/Rubik-Medium.ttf);
+}
+
+@font-face {
+    font-family: rubikB;
+    src: url(fonts/Rubik-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: shadow;
+    src: url(fonts/ShadowsIntoLight-Regular.ttf);
+}
+
+.active {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+}
+
+.active * {
+    color: black;
+}
+
+.hero {
+    background-image: url(images/hero-bg.jpg);
+}
+
+.hero-subtitle {
+    font-family: shadow;
+    margin-block-end: 25px;
+}
+
+.hero-title {
+    font-family: rubikB;
+}
+
+.offer {
+    background-image: url(images/hero-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer {
+    background-image: url(images/footer-illustration.png);
+    background-repeat: no-repeat;
+    /* padding-block: 120px; */
+    background-size: contain;
+    background-position: bottom;
+}
